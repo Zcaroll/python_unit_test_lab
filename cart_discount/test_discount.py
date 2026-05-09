@@ -11,6 +11,12 @@ class TestDiscount(TestCase):
 
     
     # TODO more unit tests here. Each test should test one scenario
+    # example test from lab 
+    def test_discount_returns_lowest_price_when_called_with_three_prices(self):
+        prices = [15, 8, 22]
+        result = discount(prices)
+        self.assertEqual(result, 8)
+        # test is funciontionally very similar to the one above, just wanted to finish the lab thing
 
 
 if __name__ == '__main__':
