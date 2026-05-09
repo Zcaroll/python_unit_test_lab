@@ -18,6 +18,11 @@ class TestDiscount(TestCase):
         self.assertEqual(result, 8)
         # test is funciontionally very similar to the one above, just wanted to finish the lab thing
 
+    # tests discount when all items are the same price
+    def test_all_items_same_price(self):
+        prices = [12, 12, 12]
+        expected_discount = 12
+        self.assertEqual(expected_discount, discount(prices))
 
 if __name__ == '__main__':
     unittest.main()
